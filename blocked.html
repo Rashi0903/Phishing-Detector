@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Site Blocked</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #f00; /* TEXT remains red */
+      text-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 50px #fff; /* GLOW is white */
+      animation: glow 2s infinite alternate;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #0f0;
+      text-shadow: 0 0 10px #0f0;
+      margin-bottom: 50px;
+    }
+
+    .scanline {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.05),
+        rgba(0, 255, 0, 0.05) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
+      animation: moveScan 3s linear infinite;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff; }
+      to { text-shadow: 0 0 20px #eee, 0 0 40px #eee, 0 0 60px #eee; }
+    }
+
+    @keyframes moveScan {
+      from { background-position: 0 0; }
+      to { background-position: 0 100%; }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    .hacker-lines {
+      font-size: 0.8em;
+      color: #0f0;
+      margin-top: 20px;
+      white-space: pre-line;
+      animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scanline"></div>
+  <h1><span class="icon">🚫</span> SITE BLOCKED</h1>
+  <p>This site was flagged as suspicious and has been blocked.</p>
+
+  <div class="hacker-lines">
+    > Initiating firewall lockdown…  
+    > Malicious patterns detected…  
+    > Access denied.
+  </div>
+
+  <div class="footer">🛡️ Phishing Detector v1.0</div>
+</body>
+</html>

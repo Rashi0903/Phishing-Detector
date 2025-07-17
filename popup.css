@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  width: 300px;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #8f8;
+  margin-bottom: 15px;
+}
+
+.scan-btn {
+  background: transparent;
+  border: 2px solid #0f0;
+  color: #0f0;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #0f0;
+  transition: all 0.3s ease;
+}
+.scan-btn:hover {
+  background: #0f0;
+  color: #000;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.result-box {
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #0f0;
+  background: rgba(0, 255, 0, 0.1);
+  font-size: 14px;
+}
+
+.actions {
+  margin-top: 15px;
+  display: none;
+}
+
+.actions button {
+  border: 2px solid #0f0;
+  background: transparent;
+  color: #0f0;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.proceed-btn:hover {
+  background: #0f0;
+  color: #000;
+  box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.block-btn {
+  border-color: #f00;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+}
+.block-btn:hover {
+  background: #f00;
+  color: #000;
+  box-shadow: 0 0 10px #f00, 0 0 20px #f00;
+}
+
