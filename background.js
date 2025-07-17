@@ -1,5 +1,5 @@
 // 🔑 Your Google Safe Browsing API key
-const API_KEY = "AIzaSyAqi3APOZjEXqRjc1SbwEXIvzCZ579i8tg"; // <-- yaha apni API key dal
+const API_KEY = "put your API key here"; 
 
 // Listen for URL check messages from content.js
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
